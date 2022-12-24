@@ -1,0 +1,19 @@
+:root {
+    --light-brown: #edc591;
+    --green: #415e54;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    height: 40px;
+    width: 40px;
+}
