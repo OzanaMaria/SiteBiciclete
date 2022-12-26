@@ -24,7 +24,7 @@ export default function Example() {
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
-                                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
                                         <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -46,7 +46,7 @@ export default function Example() {
                                                 {item.name === "Catalog" ?
                                                     <Menu as="div" className="relative ml-3">
                                                         <div>
-                                                            <Menu.Button className="inline-flex w-full justify-center bg-white text-sm font-medium text-gray-700 shadow-sm hover: text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 text-lg">
+                                                            <Menu.Button className="inline-flex w-full justify-center bg-transparent text-sm font-medium text-white shadow-sm hover: text-sm text-white-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 text-lg">
                                                                 {item.name}
                                                                 <ChevronDownIcon className="-mr-1 ml-2 h-8 w-5" aria-hidden="true" />
                                                             </Menu.Button>
@@ -60,12 +60,12 @@ export default function Example() {
                                                             leaveFrom="transform opacity-100 scale-100"
                                                             leaveTo="transform opacity-0 scale-95"
                                                         >
-                                                            <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ">
+                                                            <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-white ring-opacity-5 focus:outline-none ">
                                                                 <Menu.Item>
                                                                     {({ active }) => (
                                                                         <a
                                                                             href="/catalog"
-                                                                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-sm text-white-700')}
                                                                         >
                                                                             De curse
                                                                         </a>
@@ -75,7 +75,7 @@ export default function Example() {
                                                                     {({ active }) => (
                                                                         <a
                                                                             href="#"
-                                                                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-sm text-white-700')}
                                                                         >
                                                                             Singlespeed
                                                                         </a>
@@ -85,7 +85,7 @@ export default function Example() {
                                                                     {({ active }) => (
                                                                         <a
                                                                             href="#"
-                                                                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-sm text-white-700')}
                                                                         >
                                                                             Trekking
                                                                         </a>
@@ -95,7 +95,7 @@ export default function Example() {
                                                                     {({ active }) => (
                                                                         <a
                                                                             href="#"
-                                                                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-sm text-white-700')}
                                                                         >
                                                                             Arhiva
                                                                         </a>
@@ -108,7 +108,7 @@ export default function Example() {
                                                         key={item.name}
                                                         href={item.href}
                                                         className={classNames(
-                                                            item.current ? 'bg-gray-900 text-white text-lg' : 'text-black-300 hover:bg-gray-700 hover:text-white text-lg',
+                                                            item.current ? 'bg-gray-900 text-white text-lg' : 'text-white hover:bg-gray-700 hover:text-white text-lg',
                                                             'px-3 py-2 rounded-md text-sm font-medium'
                                                         )}
                                                         aria-current={item.current ? 'page' : undefined}
@@ -124,7 +124,7 @@ export default function Example() {
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <button
                                     type="button"
-                                    className="text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium text-lg"
+                                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium text-lg"
                                 >
                                     <span>Admin</span>
                                 </button>
@@ -142,7 +142,7 @@ export default function Example() {
                                     as="a"
                                     href={item.href}
                                     className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                        item.current ? 'bg-white text-black' : 'text-white-300 hover:bg-black hover:text-white',
                                         'block px-3 py-2 rounded-md text-base font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
