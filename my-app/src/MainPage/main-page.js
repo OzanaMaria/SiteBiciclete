@@ -1,12 +1,11 @@
-
-import Navbar from "./../Navbar/navbar"
+import Navbar from "./../Navbar/navbar";
 import "./main-page.css";
 
 function MainPage() {
 
     return (
         <div className="body-img">
-            <div className="bg-img">  <Navbar />
+            <div className="bg-img">  <Navbar props="bg-transparent-800" />
                 <div class="grid grid-cols-4 grid-flow-col gap-4 z-0">
                     <div></div>
                     <div className="home-text leading-loose">

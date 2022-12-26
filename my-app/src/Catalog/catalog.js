@@ -1,7 +1,7 @@
-
+import Navbar from "./../Navbar/navbar";
 
 function Catalog() {
-    return (<>Catalog</>);
+    return (<><Navbar props="bg-red" /></>);
 }
 
 export default Catalog;

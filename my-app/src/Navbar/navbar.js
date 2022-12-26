@@ -5,19 +5,20 @@ import { GrBike } from "react-icons/gr";
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const navigation = [
-    { name: 'Acasa', href: '#', current: true },
-    { name: 'Catalog', href: '#', current: false },
-    { name: 'Despre mine', href: '#', current: false },
-    { name: 'Contact', href: '#', current: false },
+    { name: 'Acasa', href: '/', current: true },
+    { name: 'Catalog', href: '/catalog', current: false },
+    { name: 'Despre mine', href: '/despre-mine', current: false },
+    { name: 'Contact', href: '/contact', current: false },
 ]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Example({ props }) {
+    console.log(props);
     return (
-        <Disclosure as="nav" className="bg-transparent-800">
+        <Disclosure as="nav" className={props}>
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -64,7 +65,7 @@ export default function Example() {
                                                                 <Menu.Item>
                                                                     {({ active }) => (
                                                                         <a
-                                                                            href="/catalog"
+                                                                            href="/catalog/de-curse"
                                                                             className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-xl text-black')}
                                                                         >
                                                                             De curse
@@ -74,7 +75,7 @@ export default function Example() {
                                                                 <Menu.Item>
                                                                     {({ active }) => (
                                                                         <a
-                                                                            href="#"
+                                                                            href="/catalog/singlespeed"
                                                                             className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-xl text-black')}
                                                                         >
                                                                             Singlespeed
@@ -84,7 +85,7 @@ export default function Example() {
                                                                 <Menu.Item>
                                                                     {({ active }) => (
                                                                         <a
-                                                                            href="#"
+                                                                            href="/catalog/trekking"
                                                                             className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-xl text-black')}
                                                                         >
                                                                             Trekking
@@ -94,7 +95,7 @@ export default function Example() {
                                                                 <Menu.Item>
                                                                     {({ active }) => (
                                                                         <a
-                                                                            href="#"
+                                                                            href="/catalog/arhiva"
                                                                             className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-xl text-black')}
                                                                         >
                                                                             Arhiva
