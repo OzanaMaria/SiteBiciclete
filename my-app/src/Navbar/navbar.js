@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { GrBike } from "react-icons/gr";
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
@@ -46,7 +46,7 @@ export default function Example() {
                                                 {item.name === "Catalog" ?
                                                     <Menu as="div" className="relative ml-3">
                                                         <div>
-                                                            <Menu.Button className="inline-flex w-full justify-center bg-transparent text-sm font-medium text-white shadow-sm hover: text-sm text-white-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 text-lg">
+                                                            <Menu.Button className="inline-flex w-full justify-center bg-transparent text-2xl font-medium text-white shadow-sm hover: text-sm text-white-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 text-lg">
                                                                 {item.name}
                                                                 <ChevronDownIcon className="-mr-1 ml-2 h-8 w-5" aria-hidden="true" />
                                                             </Menu.Button>
@@ -65,7 +65,7 @@ export default function Example() {
                                                                     {({ active }) => (
                                                                         <a
                                                                             href="/catalog"
-                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-sm text-white-700')}
+                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-xl text-black')}
                                                                         >
                                                                             De curse
                                                                         </a>
@@ -75,7 +75,7 @@ export default function Example() {
                                                                     {({ active }) => (
                                                                         <a
                                                                             href="#"
-                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-sm text-white-700')}
+                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-xl text-black')}
                                                                         >
                                                                             Singlespeed
                                                                         </a>
@@ -85,7 +85,7 @@ export default function Example() {
                                                                     {({ active }) => (
                                                                         <a
                                                                             href="#"
-                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-sm text-white-700')}
+                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-xl text-black')}
                                                                         >
                                                                             Trekking
                                                                         </a>
@@ -95,7 +95,7 @@ export default function Example() {
                                                                     {({ active }) => (
                                                                         <a
                                                                             href="#"
-                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-sm text-white-700')}
+                                                                            className={classNames(active ? 'text-red' : '', 'block px-4 py-2 text-xl text-black')}
                                                                         >
                                                                             Arhiva
                                                                         </a>
@@ -107,10 +107,8 @@ export default function Example() {
                                                     </Menu> : <><a
                                                         key={item.name}
                                                         href={item.href}
-                                                        className={classNames(
-                                                            item.current ? 'bg-gray-900 text-white text-lg' : 'text-white hover:bg-gray-700 hover:text-white text-lg',
-                                                            'px-3 py-2 rounded-md text-sm font-medium'
-                                                        )}
+                                                        className='text-white hover:bg-gray-700 hover:text-white text-l px-3 py-2 rounded-md text-2xl font-medium'
+
                                                         aria-current={item.current ? 'page' : undefined}
                                                     >
                                                         {item.name}
@@ -124,7 +122,7 @@ export default function Example() {
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <button
                                     type="button"
-                                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium text-lg"
+                                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-2xl font-medium text-lg"
                                 >
                                     <span>Admin</span>
                                 </button>

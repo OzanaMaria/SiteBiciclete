@@ -10,7 +10,7 @@ function App() {
 
       <Router>
 
-        <Navbar />
+
         <Routes>
           <Route exact path="/" element={<MainPage />} />
           <Route exact path="/catalog" element={<Catalog />} />
