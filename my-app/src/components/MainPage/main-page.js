@@ -12,7 +12,7 @@ function MainPage() {
                         <div>
 
                             <div class="font-bold text-3xl mb-2 leading-loose">Biciclete clasice</div>
-                            <div class="font-bold text-4xl mb-2 leading-loose">Restaurate</div>
+                            <div class="font-bold text-4xl mb-2 leading-loose">Restaurare</div>
                         </div>
                         <div class="font-bold text-3xl mb-2 leading-loose">Specificatii
                             <ul class="font-bold text-xl mb2 leading-loose">

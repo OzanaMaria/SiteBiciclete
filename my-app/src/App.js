@@ -1,8 +1,7 @@
-
-import Navbar from "./Navbar/navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MainPage from "./MainPage/main-page";
-import Catalog from "./Catalog/catalog";
+import MainPage from "./components/MainPage/main-page";
+import Catalog from "./components/Catalog/catalog";
+import BikeDetails from "./components/BikeDetails/bike-details";
 
 function App() {
   return (
@@ -14,6 +13,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<MainPage />} />
           <Route exact path="/catalog" element={<Catalog />} />
+          <Route exact path="/catalog/:id" element={<BikeDetails />} />
         </Routes>
       </Router>
     </div>

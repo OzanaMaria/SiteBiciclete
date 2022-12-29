@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    .bike-list{
+        @apply
+        flex
+        flex-wrap
+        justify-evenly
+        m-10
+    }
+    .card{
+        @apply
+        bg-white text-gray-700
+        w-72 min-h-[10rem]
+        shadow-lg rounded-md overflow-hidden
+        m-7
+    }
+
+    .product-title{
+        @apply
+        font-bold text-2xl
+        overflow-ellipsis overflow-hidden whitespace-nowrap
+    }
+}

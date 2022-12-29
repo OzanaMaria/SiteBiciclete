@@ -47,7 +47,7 @@ export default function Example({ props }) {
                                                 {item.name === "Catalog" ?
                                                     <Menu as="div" className="relative ml-3">
                                                         <div>
-                                                            <Menu.Button className="inline-flex w-full justify-center bg-transparent text-2xl font-medium text-white shadow-sm hover: text-sm text-white-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 text-lg">
+                                                            <Menu.Button className="inline-flex w-full justify-center font-medium bg-transparent text-2xl font-medium text-white shadow-sm hover: text-2xl text-white-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 text-lg">
                                                                 {item.name}
                                                                 <ChevronDownIcon className="-mr-1 ml-2 h-8 w-5" aria-hidden="true" />
                                                             </Menu.Button>
